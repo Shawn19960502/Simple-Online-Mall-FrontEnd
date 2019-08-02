@@ -1,0 +1,35 @@
+{
+  "name": "simple-online-mall-frontend",
+  "version": "1.0.0",
+  "description": "shuo-mall-front-end",
+  "main": "index.js",
+  "scripts": {
+    "dev": "WEBPACK_ENV=dev webpack-dev-server --inline --port 9001",
+    "dist": "WEBPACK_ENV=online webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shawn19960502/Simple-Online-Mall-FrontEnd.git"
+  },
+  "author": "Shawn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shawn19960502/Simple-Online-Mall-FrontEnd/issues"
+  },
+  "homepage": "https://github.com/Shawn19960502/Simple-Online-Mall-FrontEnd#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.11.1",
+    "html-loader": "^0.4.5",
+    "jquery": "^3.4.1",
+    "style-loader": "^0.17.0",
+    "webpack": "^1.15.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^1.16.5"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^2.28.0",
+    "url-loader": "^0.5.8"
+  }
+}
