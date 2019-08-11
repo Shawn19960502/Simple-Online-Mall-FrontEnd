@@ -2,8 +2,17 @@
 * @Author: Shawn Yang
 * @Date:   2019-07-29 16:44:45
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-07-30 20:50:57
+* @Last Modified time: 2019-08-11 16:31:53
 */
 'use strict';
 console.log("index.js is loaded successfully!");
-require('./index.css')
+// require('./index.css');
+// require('../login/index.js');
+// console.log('hhh');
+// var _mm = require('../../util/shuomall.js');
+// console.log(_mm.getUrlParam('test'));
+require('../common/nav-simple/index.js');
+require('../common/nav/index.js');
+require('../common/header/index.js');
+
+ 

@@ -1,0 +1,85 @@
+/*
+* @Author: Shawn Yang
+* @Date:   2019-08-05 17:31:23
+* @Last Modified by:   Shawn Yang
+* @Last Modified time: 2019-08-11 17:17:21
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f6f6f6;
+    font: 20px/1.5 arial, Helvetica, TahomaMicrosoft YaHei, sans-serif;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+    border: none;
+}
+label{
+    cursor: pointer;
+}
+input[type='checkbox']{
+    cursor: pointer;
+}
+
+.w{
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.hide{
+    display: none;
+}
+.link{
+    color: #999;
+    cursor: pointer;
+    text-decoration: none;
+}
+.link:hover{
+    /*color: #e80012;*/
+    color: #64A3D9;
+}
+.link-text{
+    color: #999;
+    text-decoration: none;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    border: none;
+    background: #215B8D;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-mini{
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    padding: 0 10px;
+}
+.loading{
+    margin: 10px auto;
+    display: block;
+    width: 65px;
+    height: 65px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: url('../../image/loading.gif') no-repeat;
+/*    background: url(../../image/icon/loading.gif) no-repeat;*/
+    opacity: .6;
+}

@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>shuomall</title>
 </head>
 <body>
-	hssellddd
+	<%= require('html-loader!./layout/nav.html')  %>
+	<%= require('html-loader!./layout/header.html')  %>
+	<div class="page-wrap w">
+		<%= require('html-loader!./layout/nav-side.html')  %>
+		<div class="content with-nav">test</div>
+		
+	</div>
+	<%= require('html-loader!./layout/footer.html')  %>
 <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.js"></script>
-
 </body>
 </html>
