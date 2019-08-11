@@ -2,7 +2,7 @@
 * @Author: Shawn Yang
 * @Date:   2019-07-29 17:09:03
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-02 11:41:34
+* @Last Modified time: 2019-08-07 13:45:10
 */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
@@ -43,10 +43,20 @@ var config = {
    		new HtmlWebpackPlugin(getHtmlConfig('index')),
    		new HtmlWebpackPlugin(getHtmlConfig('login')),
   	],
+  	resolve : {
+        alias : {
+            node_modules    : __dirname + '/node_modules',
+            util            : __dirname + '/src/util',
+            // page            : __dirname + '/src/page',
+            service         : __dirname + '/src/service',
+            // image           : __dirname + '/src/image'
+        }
+    },
   	module : {
   		loaders: [
   			{ test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
-  			{ test: /\.(git|png|jpg)\??.*$/, loader: 'url-loader?limit=100&name=../resource/[name].[ext]'}
+  			{ test: /\.(gif|png|jpg)\??.*$/, loader: 'url-loader?limit=100&name=../resource/[name].[ext]'},
+  			{ test: /\.(woff|woff2|eot|ttf|svg)/,loader: 'file?name=assets/[name].[ext]'}
   		]
   	}
 };

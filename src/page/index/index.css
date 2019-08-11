@@ -2,12 +2,12 @@
 * @Author: Shawn Yang
 * @Date:   2019-07-29 19:55:36
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-02 11:50:10
+* @Last Modified time: 2019-08-06 22:32:15
 */
 
 body {
 /*	background: #109911;*/
 	background: url('../../image/jonas.jpg');
 	color: black;
-	font-size: 50px;
+/*	font-size: 50px;*/
 }
