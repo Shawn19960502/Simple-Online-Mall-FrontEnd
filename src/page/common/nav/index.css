@@ -2,13 +2,12 @@
 * @Author: Shawn Yang
 * @Date:   2019-08-07 11:25:54
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-11 17:47:13
+* @Last Modified time: 2019-08-13 17:54:23
 */
 .nav{
     background: #eee;
     height: 30px;
     line-height: 24px;   
-}
 
 .nav .user{
     float: left;
