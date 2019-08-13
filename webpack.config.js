@@ -2,7 +2,7 @@
 * @Author: Shawn Yang
 * @Date:   2019-07-29 17:09:03
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-07 13:45:10
+* @Last Modified time: 2019-08-13 17:07:57
 */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
@@ -10,10 +10,11 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 //set environment
 var WEBPACK_ENV = process.env.WEBPACK_ENV  || 'dev';
 //get html plugin parameter methods;
-var getHtmlConfig = function(name) {
+var getHtmlConfig = function(name, title) {
 	return {
    			template : './src/view/' + name + '.html',
    			filename : 'view/' + name + '.html',
+        title: title,
    			inject : true,
    			hash : true,
    			chunks : ['common', name]
@@ -24,6 +25,7 @@ var config = {
 		'common' : ['./src/page/common/index.js'],
 		'index' : ['./src/page/index/index.js'],
 		'login' : ['./src/page/login/index.js'],
+    'result' : ['./src/page/result/index.js'],
 	},
 	output: {
 		// path: '/Users/yangshuo/Backend-Amazon/shuomall-frontend/Simple-Online-Mall-FrontEnd/dist',
@@ -40,8 +42,9 @@ var config = {
 	    	filename : 'js/base.js'
    		}),
    		new ExtractTextPlugin('css/[name].css'),
-   		new HtmlWebpackPlugin(getHtmlConfig('index')),
-   		new HtmlWebpackPlugin(getHtmlConfig('login')),
+   		new HtmlWebpackPlugin(getHtmlConfig('index', 'Head Page')),
+   		new HtmlWebpackPlugin(getHtmlConfig('login', 'Login')),
+      new HtmlWebpackPlugin(getHtmlConfig('result', 'Operation Result')),
   	],
   	resolve : {
         alias : {
@@ -56,7 +59,8 @@ var config = {
   		loaders: [
   			{ test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
   			{ test: /\.(gif|png|jpg)\??.*$/, loader: 'url-loader?limit=100&name=../resource/[name].[ext]'},
-  			{ test: /\.(woff|woff2|eot|ttf|svg)/,loader: 'file?name=assets/[name].[ext]'}
+  			{ test: /\.(woff|woff2|eot|ttf|svg)/,loader: 'file?name=assets/[name].[ext]'},
+        { test: /\.string$/, loader: 'html-loader', query : {minimize : true, removeAttributeQuotes : false}}
   		]
   	}
 };

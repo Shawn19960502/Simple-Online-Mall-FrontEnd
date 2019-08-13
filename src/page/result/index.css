@@ -1,0 +1,26 @@
+/*
+* @Author: Shawn Yang
+* @Date:   2019-08-13 17:17:03
+* @Last Modified by:   Shawn Yang
+* @Last Modified time: 2019-08-13 17:44:27
+*/
+.page-wrap{
+    padding: 30px 0;
+    margin-top: 20px;
+    text-align: center;
+    background: #fff;
+}
+.result-con{
+    display: none;
+}
+.result-con .result-title{
+    color: #0A375E;
+}
+.result-con .result-content{
+    margin-top: 20px;
+}
+.result-con .result-content .link{
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,25 @@
+/*
+* @Author: Shawn Yang
+* @Date:   2019-08-11 17:42:00
+* @Last Modified by:   Shawn Yang
+* @Last Modified time: 2019-08-13 16:15:24
+*/
+.nav-side{
+    float: left;
+    width: 130px;
+    min-height: 100px;
+}
+.nav-side .nav-item{
+    line-height: 35px;
+    font-size: 20px;
+}
+.nav-side .nav-item .link{
+    color: #888;
+}
+.nav-side .nav-item.active .link{
+    color: #64A3D9;
+}
+.content.with-nav{
+    float: left;
+    width: 950px;
+}

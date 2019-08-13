@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= htmlWebpackPlugin.options.title%> - shuomall</title>
+</head>
+<body>
+	<%= require('html-loader!./layout/nav-simple.html')  %>
+	<div class="page-wrap w">
+		    <div class="result-con register-success">
+                <h1 class="result-title">Register Succeed</h1>
+                <div class="result-content">
+                    <a class="link" href="./index.html">Home Page</a>
+                    <a class="link" href="./user-login.html">Sign in</a>
+                </div>
+            </div>
+                <div class="result-con pass-reset-success">
+                <h1 class="result-title">Reset Successfully</h1>
+                <div class="result-content">
+                    <a class="link" href="./index.html">Home Page</a>
+                    <a class="link" href="./user-login.html">Sign in</a>
+                </div>
+            </div>
+            <div class="result-con cart-add-success">
+                <h1 class="result-title">Add Successfully</h1>
+                <div class="result-content">
+                    <a class="link" href="./index.html">Continue Shopping</a>
+                    <a class="link" href="./cart.html">Go to shopping cart</a>
+                </div>
+            </div>
+            <div class="result-con payment-success">
+                <h1 class="result-title">Payment Succeed</h1>
+                <div class="result-content">
+                    <a class="link" href="./index.html">Continue Shopping</a>
+                    <a class="link order-number" href="./order-detail.html?orderNumber=">Review Order</a>
+                </div>
+            </div>
+            <div class="result-con default-success">
+                <h1 class="result-title">Operation Succeed</h1>
+                <div class="result-content">
+                    <a class="link" href="./index.html">Home Page</a>
+                </div>
+            </div>
+	</div>
+	<%= require('html-loader!./layout/footer.html')  %>
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.js"></script>
+</body>
+</html>
