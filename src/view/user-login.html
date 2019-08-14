@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= htmlWebpackPlugin.options.title%> - shuomall</title>
+</head>
+<body>
+	<%= require('html-loader!./layout/nav-simple.html')  %>
+        <div class="page-wrap">
+            <div class="w">
+                <div class="user-con">
+                    <div class="user-title">Login</div>
+                    <div class="user-box">
+                        <div class="error-item">
+                            <i class="fa fa-minus-circle error-icon"></i>
+                            <p class="err-msg">Error</p>
+                        </div>
+                        <div class="user-item">
+                            <label class="user-label" for="">
+                                <i class="fa fa-user"></i>
+                            </label>
+                            <input class="user-content" id="username" placeholder="username" autocomplete="off">
+                        </div>
+                        <div class="user-item">
+                            <label class="user-label" for="password">
+                                <i class="fa fa-lock"></i>
+                            </label>
+                            <input type="password" class="user-content" id="password" placeholder="password" autocomplete="off">
+                        </div>
+                        <a class="btn btn-submit" id="submit">Sign in</a>
+                        <div class="link-item">
+                            <a class="link" href="./user-pass-reset.html" target="_blank">Forget password</a>
+                            <a class="link" href="./user-register.html" target="_blank">Register</a>
+                        </div>
+                    </div>  
+                </div>                
+            </div>
+        </div>
+	<%= require('html-loader!./layout/footer.html')  %>
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.js"></script>
+</body>
+</html>

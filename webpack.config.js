@@ -2,7 +2,7 @@
 * @Author: Shawn Yang
 * @Date:   2019-07-29 17:09:03
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-13 17:52:55
+* @Last Modified time: 2019-08-14 17:19:41
 */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
@@ -24,7 +24,7 @@ var config = {
 	entry: {
 		'common' : ['./src/page/common/index.js'],
 		'index' : ['./src/page/index/index.js'],
-		'login' : ['./src/page/login/index.js'],
+		'user-login' : ['./src/page/user-login/index.js'],
     'result' : ['./src/page/result/index.js'],
 	},
 	output: {
@@ -43,7 +43,7 @@ var config = {
    		}),
    		new ExtractTextPlugin('css/[name].css'),
    		new HtmlWebpackPlugin(getHtmlConfig('index', 'Head Page')),
-   		new HtmlWebpackPlugin(getHtmlConfig('login', 'Login')),
+   		new HtmlWebpackPlugin(getHtmlConfig('user-login', 'Login')),
       new HtmlWebpackPlugin(getHtmlConfig('result', 'Operation Result')),
   	],
   	resolve : {
