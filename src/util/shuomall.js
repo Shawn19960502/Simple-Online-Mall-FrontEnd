@@ -2,7 +2,7 @@
 * @Author: Shawn Yang
 * @Date:   2019-08-02 12:04:10
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-10 15:33:27
+* @Last Modified time: 2019-08-21 16:07:09
 */
 
 'use strict';
@@ -11,17 +11,18 @@ var conf = {
     serverHost : 'http://localhost:8088'
 };
 
-var _mm = {
+var _sm = {
 	request : function(param){
 		var _this = this;
 		$.ajax({
-			type : param.method || 'get',
+			type : param.method || 'GET',
 			url  : param.url || '',
-            crossDomain: true,
+            xhrFields: {
+                            withCredentials: true
+                        },
 			dataType : param.type || 'json',
 			data : param.data || '',
-			sucess : function(res){
-                response.__setitem__("Access-Control-Allow-Origin", "*");
+			success : function(res){
 				if(0 === res.status){
 					typeof param.success === 'function' && param.success(res.data, res.msg);
 				}
@@ -33,6 +34,7 @@ var _mm = {
                 }
 			},
 			error : function(err){
+                console.log(2);
 				typeof param.error === 'function' && param.error(err.statusText);
 			}
 
@@ -81,4 +83,4 @@ var _mm = {
     }
 }
 
-module.exports = _mm;
+module.exports = _sm;

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title><%= htmlWebpackPlugin.options.title%> - s.y.mall</title>
+    </head>
+    <body>
+        <%= require('html-loader!./layout/nav-simple.html')  %>
+        <div class="page-wrap">
+            <div class="w">
+                <div class="user-con">
+                    <div class="user-title">User Register</div>
+                    <div class="user-box">
+                        <div class="error-item">
+                            <i class="fa fa-minus-circle error-icon"></i>
+                            <p class="err-msg">Error</p>
+                        </div>
+                        <div class="user-item">
+                            <label class="user-label" for="username">
+                                <i class="fa fa-user"></i>
+                            </label>
+                            <input class="user-content" id="username" placeholder="Username" autocomplete="off">
+                        </div>
+                        <div class="user-item">
+                            <label class="user-label" for="password">
+                                <i class="fa fa-lock"></i>
+                            </label>
+                            <input type="password" class="user-content" id="password" placeholder="Password" autocomplete="off">
+                        </div>
+                        <div class="user-item">
+                            <label class="user-label" for="password-confirm">
+                                <i class="fa fa-lock"></i>
+                            </label>
+                            <input type="password" class="user-content" id="password-confirm" placeholder="Retype password" autocomplete="off">
+                        </div>
+                        <div class="user-item">
+                            <label class="user-label" for="phone">
+                                <i class="fa fa-phone"></i>
+                            </label>
+                            <input class="user-content" id="phone" placeholder="phone number" autocomplete="off">
+                        </div>
+                        <div class="user-item">
+                            <label class="user-label" for="email">
+                                <i class="fa fa-envelope"></i>
+                            </label>
+                            <input class="user-content" id="email" placeholder="E-mail address" autocomplete="off">
+                        </div>
+                        <div class="user-item">
+                            <label class="user-label" for="question">
+                                <i class="fa fa-question"></i>
+                            </label>
+                            <input class="user-content" id="question" placeholder="Security Question" autocomplete="off">
+                        </div>
+                        <div class="user-item">
+                            <label class="user-label" for="answer">
+                                <i class="fa fa-key"></i>
+                            </label>
+                            <input class="user-content" id="answer" placeholder="Answer" autocomplete="off">
+                        </div>
+                        <a class="btn btn-submit" id="submit">Register</a>
+                        <div class="link-item">
+                            <a class="link" href="./user-login.html">Sign in>></a>
+                        </div>
+                    </div>  
+                </div>                
+            </div>
+        </div>
+        <%= require('html-loader!./layout/footer.html')  %>
+    </body>
+</html>

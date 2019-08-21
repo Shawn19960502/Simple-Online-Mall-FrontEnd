@@ -2,7 +2,7 @@
 * @Author: Shawn Yang
 * @Date:   2019-08-07 11:25:54
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-14 17:17:53
+* @Last Modified time: 2019-08-21 16:29:44
 */
 .nav{
     background: #eee;
@@ -15,8 +15,9 @@
 .nav .user.login{
     display: none;
 }
+
 .nav .user .link{
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .nav .nav-list{
@@ -25,4 +26,10 @@
 .nav .nav-list .nav-item{
     display: inline-block;
     margin-left: 15px;
+}
+.nav .user.login .link.js-logout{
+	margin-left: 10px;
+}
+.username{
+	margin-left:3px;
 }

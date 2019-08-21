@@ -2,7 +2,7 @@
 * @Author: Shawn Yang
 * @Date:   2019-08-05 17:31:23
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-13 17:51:32
+* @Last Modified time: 2019-08-21 12:16:40
 */
 
 *{
@@ -50,6 +50,8 @@ input[type='checkbox']{
 .link-text{
     color: #999;
     text-decoration: none;
+    font-size: 15px;
+
 }
 
 .btn{

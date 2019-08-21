@@ -2,7 +2,7 @@
 * @Author: Shawn Yang
 * @Date:   2019-07-29 17:09:03
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-14 17:19:41
+* @Last Modified time: 2019-08-21 17:43:36
 */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
@@ -25,6 +25,11 @@ var config = {
 		'common' : ['./src/page/common/index.js'],
 		'index' : ['./src/page/index/index.js'],
 		'user-login' : ['./src/page/user-login/index.js'],
+    'user-register' : ['./src/page/user-register/index.js'],
+    'user-pass-reset' : ['./src/page/user-pass-reset/index.js'],
+    'user-pass-update' : ['./src/page/user-pass-update/index.js'],
+    'user-center-update' : ['./src/page/user-center-update/index.js'],
+    'user-center' : ['./src/page/user-center/index.js'],
     'result' : ['./src/page/result/index.js'],
 	},
 	output: {
@@ -45,12 +50,17 @@ var config = {
    		new HtmlWebpackPlugin(getHtmlConfig('index', 'Head Page')),
    		new HtmlWebpackPlugin(getHtmlConfig('user-login', 'Login')),
       new HtmlWebpackPlugin(getHtmlConfig('result', 'Operation Result')),
+      new HtmlWebpackPlugin(getHtmlConfig('user-register', 'Register')),
+      new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset', 'FindPassword')),
+      new HtmlWebpackPlugin(getHtmlConfig('user-center', 'User Center')),
+      new HtmlWebpackPlugin(getHtmlConfig('user-center-update', 'User Center Update')),
+      new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', 'Change Password')),
   	],
   	resolve : {
         alias : {
             node_modules    : __dirname + '/node_modules',
             util            : __dirname + '/src/util',
-            // page            : __dirname + '/src/page',
+            page            : __dirname + '/src/page',
             service         : __dirname + '/src/service',
             // image           : __dirname + '/src/image'
         }

@@ -1,0 +1,22 @@
+/*
+* @Author: Shawn Yang
+* @Date:   2019-08-20 16:39:33
+* @Last Modified by:   Shawn Yang
+* @Last Modified time: 2019-08-21 16:27:47
+*/
+.form-line{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.form-line .label{
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+}
+.form-line .text{
+	margin-left:120px;
+}
+.btn.btn-submit{
+	margin-top:30px;
+}
