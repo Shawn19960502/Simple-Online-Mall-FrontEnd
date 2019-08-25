@@ -2,7 +2,7 @@
 * @Author: Shawn Yang
 * @Date:   2019-08-07 11:25:48
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-21 13:37:04
+* @Last Modified time: 2019-08-23 16:55:34
 */
 'use strict';
 console.log('common/nav/index.js is loaded successfully');
@@ -39,7 +39,6 @@ var nav = {
             $('.user.not-login').hide().siblings('.user.login').show()
                 .find('.username').text(res.username);
         }, function(errMsg){
-            alert(errMsg);
         });
     },
     loadCartCount : function(){

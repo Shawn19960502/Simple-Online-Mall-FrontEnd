@@ -2,7 +2,7 @@
 * @Author: Shawn Yang
 * @Date:   2019-07-29 17:09:03
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-21 17:43:36
+* @Last Modified time: 2019-08-23 17:24:11
 */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
@@ -24,6 +24,7 @@ var config = {
 	entry: {
 		'common' : ['./src/page/common/index.js'],
 		'index' : ['./src/page/index/index.js'],
+    'list' : ['./src/page/list/index.js'],
 		'user-login' : ['./src/page/user-login/index.js'],
     'user-register' : ['./src/page/user-register/index.js'],
     'user-pass-reset' : ['./src/page/user-pass-reset/index.js'],
@@ -55,6 +56,8 @@ var config = {
       new HtmlWebpackPlugin(getHtmlConfig('user-center', 'User Center')),
       new HtmlWebpackPlugin(getHtmlConfig('user-center-update', 'User Center Update')),
       new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', 'Change Password')),
+      new HtmlWebpackPlugin(getHtmlConfig('list', 'List')),
+
   	],
   	resolve : {
         alias : {
