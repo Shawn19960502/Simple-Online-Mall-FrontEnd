@@ -1,0 +1,22 @@
+/*
+* @Author: Shawn Yang
+* @Date:   2019-08-27 16:59:02
+* @Last Modified by:   Shawn Yang
+* @Last Modified time: 2019-08-27 17:37:46
+*/
+.content{
+	text-align: center;
+}
+.content .input{
+	width: 150px;
+	height: 24px;
+}
+.content input{
+	font-size: 20px;
+	margin-top: 20px;
+
+}
+.input-text{
+	font-size: 20px;
+
+}

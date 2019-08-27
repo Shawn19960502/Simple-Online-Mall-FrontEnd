@@ -2,7 +2,7 @@
 * @Author: Shawn Yang
 * @Date:   2019-07-29 17:09:03
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-26 11:48:52
+* @Last Modified time: 2019-08-27 16:58:30
 */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
@@ -26,6 +26,7 @@ var config = {
 		'index' : ['./src/page/index/index.js'],
     'list' : ['./src/page/list/index.js'],
     'detail' : ['./src/page/detail/index.js'],
+    'payment' : ['./src/page/payment/index.js'],
 		'user-login' : ['./src/page/user-login/index.js'],
     'user-register' : ['./src/page/user-register/index.js'],
     'user-pass-reset' : ['./src/page/user-pass-reset/index.js'],
@@ -67,6 +68,7 @@ var config = {
       new HtmlWebpackPlugin(getHtmlConfig('order-confirm', 'Order Confirm')),
       new HtmlWebpackPlugin(getHtmlConfig('order-list', 'Order List')),
       new HtmlWebpackPlugin(getHtmlConfig('order-detail', 'Order Detail')),
+      new HtmlWebpackPlugin(getHtmlConfig('payment', 'Payments')),
 
   	],
   	resolve : {

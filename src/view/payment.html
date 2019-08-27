@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title><%= htmlWebpackPlugin.options.title%> - S.Y.Mall</title>
+    </head>
+    <body>
+        <%= require('html-loader!./layout/nav.html')  %>
+        <%= require('html-loader!./layout/header.html')  %>
+        <div class="crumb">
+            <div class="w">
+                <div class="crumb-con">
+                    <a class="link" href="./index.html">S.Y.Mall</a>
+                    <span>></span>
+                    <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrap w">
+            <div class="content">
+                <h1>Type:"Hail Hydra!" and your payment will be finished!</h1>
+                <div>
+                <label class="input-text">Input:</label>
+                <input type="text" name="" class="input" placeholder="Hail Hydra!">
+
+                </div>
+                <input type="button" class="finish-button" value="Finish">
+            </div>
+        </div>
+        <%= require('html-loader!./layout/footer.html')  %>
+    </body>
+</html>
