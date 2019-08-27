@@ -2,7 +2,7 @@
 * @Author: Shawn Yang
 * @Date:   2019-08-07 11:25:48
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-23 16:55:34
+* @Last Modified time: 2019-08-27 16:16:19
 */
 'use strict';
 console.log('common/nav/index.js is loaded successfully');
@@ -26,6 +26,7 @@ var nav = {
             window.location.href = './user-register.html';
         });
         $('.js-logout').click(function(){
+            console.log("logout function is called")
             _user.logout(function(res){
                 window.location.reload();
             }, function(errMsg){

@@ -2,7 +2,7 @@
 * @Author: Shawn Yang
 * @Date:   2019-07-29 17:09:03
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-23 17:24:11
+* @Last Modified time: 2019-08-26 11:48:52
 */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
@@ -25,6 +25,7 @@ var config = {
 		'common' : ['./src/page/common/index.js'],
 		'index' : ['./src/page/index/index.js'],
     'list' : ['./src/page/list/index.js'],
+    'detail' : ['./src/page/detail/index.js'],
 		'user-login' : ['./src/page/user-login/index.js'],
     'user-register' : ['./src/page/user-register/index.js'],
     'user-pass-reset' : ['./src/page/user-pass-reset/index.js'],
@@ -32,6 +33,10 @@ var config = {
     'user-center-update' : ['./src/page/user-center-update/index.js'],
     'user-center' : ['./src/page/user-center/index.js'],
     'result' : ['./src/page/result/index.js'],
+    'cart' : ['./src/page/cart/index.js'],
+    'order-confirm'     : ['./src/page/order-confirm/index.js'],
+    'order-list'        : ['./src/page/order-list/index.js'],
+    'order-detail'      : ['./src/page/order-detail/index.js'],
 	},
 	output: {
 		// path: '/Users/yangshuo/Backend-Amazon/shuomall-frontend/Simple-Online-Mall-FrontEnd/dist',
@@ -52,11 +57,16 @@ var config = {
    		new HtmlWebpackPlugin(getHtmlConfig('user-login', 'Login')),
       new HtmlWebpackPlugin(getHtmlConfig('result', 'Operation Result')),
       new HtmlWebpackPlugin(getHtmlConfig('user-register', 'Register')),
+      new HtmlWebpackPlugin(getHtmlConfig('cart', 'Cart')),
       new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset', 'FindPassword')),
       new HtmlWebpackPlugin(getHtmlConfig('user-center', 'User Center')),
       new HtmlWebpackPlugin(getHtmlConfig('user-center-update', 'User Center Update')),
       new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', 'Change Password')),
       new HtmlWebpackPlugin(getHtmlConfig('list', 'List')),
+      new HtmlWebpackPlugin(getHtmlConfig('detail', 'Detail')),
+      new HtmlWebpackPlugin(getHtmlConfig('order-confirm', 'Order Confirm')),
+      new HtmlWebpackPlugin(getHtmlConfig('order-list', 'Order List')),
+      new HtmlWebpackPlugin(getHtmlConfig('order-detail', 'Order Detail')),
 
   	],
   	resolve : {

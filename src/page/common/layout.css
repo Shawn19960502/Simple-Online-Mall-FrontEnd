@@ -2,7 +2,7 @@
 * @Author: Shawn Yang
 * @Date:   2019-08-05 17:31:23
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-21 12:16:40
+* @Last Modified time: 2019-08-27 16:25:51
 */
 
 *{
@@ -11,7 +11,7 @@
 }
 body{
     background: #f6f6f6;
-    font: 20px/1.5 arial, Helvetica, TahomaMicrosoft YaHei, sans-serif;
+    font: 12px/1.5 arial, Helvetica, TahomaMicrosoft YaHei, sans-serif;
 }
 li{
     list-style: none;
@@ -85,4 +85,20 @@ input[type='checkbox']{
     background: url('../../image/loading.gif') no-repeat;
 /*    background: url(../../image/icon/loading.gif) no-repeat;*/
     opacity: .6;
+}
+.panel{
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+.panel .panel-title{
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+.panel .panel-body{
+    padding: 10px;
+    overflow: hidden;
 }

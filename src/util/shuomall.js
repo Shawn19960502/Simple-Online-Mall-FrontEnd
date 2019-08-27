@@ -2,7 +2,7 @@
 * @Author: Shawn Yang
 * @Date:   2019-08-02 12:04:10
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-21 16:07:09
+* @Last Modified time: 2019-08-27 15:31:47
 */
 
 'use strict';
@@ -27,7 +27,7 @@ var _sm = {
 					typeof param.success === 'function' && param.success(res.data, res.msg);
 				}
 				else if(10 === res.status){
-					this.doLogin;
+					_this.doLogin();
 				}
 				else if(1 === res.status){
                     typeof param.error === 'function' && param.error(res.msg);

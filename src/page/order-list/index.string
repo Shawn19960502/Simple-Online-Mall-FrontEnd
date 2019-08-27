@@ -1,0 +1,47 @@
+<table class="order-list-table header">
+    <tr>
+        <th class="cell cell-img">&nbsp;</th>
+        <th class="cell cell-info">Info</th>
+        <th class="cell cell-price">Price</th>
+        <th class="cell cell-count">Count</th>
+        <th class="cell cell-total">Total</th>
+    </tr>
+</table>
+{{#list}}
+<table class="order-list-table order-item">
+    <tr>
+        <td colspan="5" class="order-info">
+            <span class="order-text">
+                <span>Order No：</span>
+                <a class="link order-num" href="./order-detail.html?orderNumber={{orderNo}}" target="_blank">{{orderNo}}</a>
+            </span>
+            <span class="order-text">{{createTime}}</span>
+            <span class="order-text">Receiver：{{receiverName}}</span>
+            <span class="order-text">Order Status：{{statusDesc}}</span>
+            <span class="order-text">
+                <span>Total：</span>
+                <span class="order-total">${{payment}}</span>
+            </span>
+            <a class="link order-detail" href="./order-detail.html?orderNumber={{orderNo}}" target="_blank">Details></a>
+        </td>
+    </tr>
+    {{#orderItemVoList}}
+    <tr>
+        <td class="cell cell-img">
+            <a href="./detail.html?productId={{productId}}" target="_blank">
+                <img class="p-img" src="{{imageHost}}{{productImage}}" alt="{{productName}}" />
+            </a>
+        </td>
+        <td class="cell cell-info">
+            <a class="link" href="./detail.html?productId={{productId}}" target="_blank">{{productName}}</a>
+        </td>
+        <td class="cell cell-price">${{currentUnitPrice}}</td>
+        <td class="cell cell-count">{{quantity}}</td>
+        <td class="cell cell-total">${{totalPrice}}</td>
+    </tr>
+    {{/orderItemVoList}}
+</table>
+{{/list}}
+{{^list}}
+<p class="err-tip">No Order</p>
+{{/list}}

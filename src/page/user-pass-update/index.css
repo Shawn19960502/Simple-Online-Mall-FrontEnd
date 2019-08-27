@@ -2,7 +2,7 @@
 * @Author: Shawn Yang
 * @Date:   2019-08-21 17:34:11
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-21 17:48:56
+* @Last Modified time: 2019-08-27 16:09:27
 */
 .form-line{
     margin-bottom: 10px;
@@ -26,4 +26,7 @@
 }
 .btn.btn-submit{
 	margin-top: 20px;
+}
+.panel-title{
+    font-size: 20px;
 }

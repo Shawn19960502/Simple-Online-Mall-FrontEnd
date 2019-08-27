@@ -2,7 +2,7 @@
 * @Author: Shawn Yang
 * @Date:   2019-08-11 11:20:48
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-21 17:40:57
+* @Last Modified time: 2019-08-27 16:18:12
 */
 var _sm = require('util/shuomall.js');
 
@@ -16,7 +16,7 @@ var _user = {
             error   : reject
         });
     },
-	logout : function() {
+	logout : function(resolve, reject) {
 		_sm.request({
 			url: _sm.getServerUrl('/user/logout.do'),
 			method: 'POST',
