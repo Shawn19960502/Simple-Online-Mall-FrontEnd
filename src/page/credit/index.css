@@ -1,0 +1,18 @@
+/*
+* @Author: Shawn Yang
+* @Date:   2019-08-27 22:17:44
+* @Last Modified by:   Shawn Yang
+* @Last Modified time: 2019-08-27 22:34:52
+*/
+.credit-name{
+	text-align: center;
+}
+.credit-link{
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: 700;
+}
+.credit-picture{
+	text-decoration: none;
+}

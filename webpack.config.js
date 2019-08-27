@@ -2,7 +2,7 @@
 * @Author: Shawn Yang
 * @Date:   2019-07-29 17:09:03
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-27 16:58:30
+* @Last Modified time: 2019-08-27 22:18:43
 */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
@@ -38,6 +38,7 @@ var config = {
     'order-confirm'     : ['./src/page/order-confirm/index.js'],
     'order-list'        : ['./src/page/order-list/index.js'],
     'order-detail'      : ['./src/page/order-detail/index.js'],
+    'credit'      : ['./src/page/credit/index.js'],
 	},
 	output: {
 		// path: '/Users/yangshuo/Backend-Amazon/shuomall-frontend/Simple-Online-Mall-FrontEnd/dist',
@@ -69,6 +70,7 @@ var config = {
       new HtmlWebpackPlugin(getHtmlConfig('order-list', 'Order List')),
       new HtmlWebpackPlugin(getHtmlConfig('order-detail', 'Order Detail')),
       new HtmlWebpackPlugin(getHtmlConfig('payment', 'Payments')),
+      new HtmlWebpackPlugin(getHtmlConfig('credit', 'Credit')),
 
   	],
   	resolve : {

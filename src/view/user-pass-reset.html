@@ -4,6 +4,7 @@
         <title><%= htmlWebpackPlugin.options.title%> - s.y.mall</title>
     </head>
     <body>
+        <%= require('html-loader!./layout/notice.html')  %>
         <%= require('html-loader!./layout/nav-simple.html')  %>
         <div class="page-wrap">
             <div class="w">

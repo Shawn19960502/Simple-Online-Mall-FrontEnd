@@ -2,7 +2,7 @@
 * @Author: Shawn Yang
 * @Date:   2019-08-05 17:31:23
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-27 16:25:51
+* @Last Modified time: 2019-08-27 22:13:04
 */
 
 *{
@@ -101,4 +101,21 @@ input[type='checkbox']{
 .panel .panel-body{
     padding: 10px;
     overflow: hidden;
+}
+.notice-con .notice {
+    font-size: 14px;
+    color: #eee;
+    font-weight: 700;
+    text-align: center;
+    font-size: 15px;
+}
+.notice-con {
+    background: #215B8D;
+    padding: 5px 0;
+    line-height: 30px;
+
+}
+.notice-link {
+    text-decoration: none;
+    color: #708090;
 }
