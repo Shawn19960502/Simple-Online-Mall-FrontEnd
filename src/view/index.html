@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head> 
+        <%= require('html-loader!./layout/head-common.html')  %>
         <title>S.Y.Mall - Full Stack Project By S.Y.</title>
     </head>
     <body>
@@ -169,7 +170,7 @@
                     <li class="floor-item">
                         <a href="./list.html?categoryId=100011">
                             <span class="floor-text">Pembroke</span>
-                            <img class="floor-img" src="<%= require('../image/floor/floor2-1.jpg') %>" alt="笔记本电脑" />
+                            <img class="floor-img" src="<%= require('../image/floor/floor2-1.jpg') %>" alt="Pembroke" />
                         </a>
                     </li>
                     <li class="floor-item">
@@ -211,7 +212,7 @@
                     <li class="floor-item">
                         <a href="./list.html?categoryId=100017">
                             <span class="floor-text">Short-Hair</span>
-                            <img class="floor-img" src="<%= require('../image/floor/floor3-2.jpg') %>" alt="帽子专区" />
+                            <img class="floor-img" src="<%= require('../image/floor/floor3-2.jpg') %>" alt="Short-Hair" />
                         </a>
                     </li>
                     <li class="floor-item">
