@@ -2,7 +2,7 @@
 * @Author: Shawn Yang
 * @Date:   2019-08-15 18:08:59
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-30 01:28:45
+* @Last Modified time: 2019-08-30 14:12:17
 */
 console.log('hello register');
 'use strict';
@@ -122,7 +122,7 @@ var page = {
             return result;
         }
         if(!_sm.validate(formData.phone, 'phone')){
-            result.msg = 'phone number format is not correct';
+            result.msg = 'phone number format is not correct.(10 numbers)';
             return result;
         }
         if(!_sm.validate(formData.email, 'email')){
