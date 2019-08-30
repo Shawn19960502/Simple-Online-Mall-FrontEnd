@@ -2,7 +2,7 @@
 * @Author: Shawn Yang
 * @Date:   2019-08-15 18:08:59
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-16 13:14:38
+* @Last Modified time: 2019-08-30 01:28:45
 */
 console.log('hello register');
 'use strict';
@@ -84,7 +84,6 @@ var page = {
             },
             // validation result
             validateResult = this.formValidate(formData);
-            console.log(`validateResult is ${validateResult.status}`);
         // verification succeed
         if(validateResult.status){
             _user.register(formData, function(res){

@@ -2,13 +2,13 @@
 * @Author: Shawn Yang
 * @Date:   2019-08-02 12:04:10
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-27 15:31:47
+* @Last Modified time: 2019-08-30 10:36:26
 */
 
 'use strict';
-var Hogan = require('hogan.js');
+var Hogan = require('hogan');
 var conf = {
-    serverHost : 'http://localhost:8088'
+    serverHost : ''
 };
 
 var _sm = {
