@@ -2,7 +2,7 @@
 * @Author: Shawn Yang
 * @Date:   2019-07-29 17:09:03
 * @Last Modified by:   Shawn Yang
-* @Last Modified time: 2019-08-27 22:18:43
+* @Last Modified time: 2019-08-30 11:11:58
 */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
@@ -42,8 +42,8 @@ var config = {
 	},
 	output: {
 		// path: '/Users/yangshuo/Backend-Amazon/shuomall-frontend/Simple-Online-Mall-FrontEnd/dist',
-		path: './dist',
-		publicPath: '/dist',
+		path: __dirname + '/dist/',
+		publicPath: 'dev' === WEBPACK_ENV ? '/dist/' : 'xxx',
 		filename: 'js/[name].js'
 	},
 	externals : {
