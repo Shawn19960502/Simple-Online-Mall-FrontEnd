@@ -16,14 +16,14 @@
         <td class="cell-info">
             <a class="link" href="./detail.html?productId={{productId}}" target="_blank">{{productName}}</a>
         </td>
-        <td class="cell-price">￥{{currentUnitPrice}}</td>
+        <td class="cell-price">${{currentUnitPrice}}</td>
         <td class="cell-count">{{quantity}}</td>
-        <td class="cell-total">￥{{totalPrice}}</td>
+        <td class="cell-total">${{totalPrice}}</td>
     </tr>
     {{/orderItemVoList}}
 </table>
 <div class="submit-con">
     <span>Order Total:</span>
-    <span class="submit-total">￥{{productTotalPrice}}</span>
+    <span class="submit-total">${{productTotalPrice}}</span>
     <span class="btn order-submit">Pay</span>
 </div>
