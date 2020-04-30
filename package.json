@@ -22,7 +22,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.11.1",
     "html-loader": "^0.4.5",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "style-loader": "^0.17.0",
     "url-loader": "^0.5.8",
     "webpack": "^1.15.0",
